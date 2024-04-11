@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="pos_clear_order_line.OrderClearButton" t-inherit="point_of_sale.Orderline" t-inherit-mode="extension">
+       <xpath expr="//ul[hasclass('info-list')]" position="before">
+           <br/>
+                <div style="margin-left: 88%;">
+                    <button t-on-click="clear" class="delete-button btn btn-link mx-2 px-3" aria-label="Delete" title="Delete">
+                        <i class="fa fa-2x fa-times-circle"/>
+                    </button>
+                </div>
+       </xpath>
+    </t>
+</templates>
